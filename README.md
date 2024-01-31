@@ -7,24 +7,24 @@ The idea is to start with 19 poems written in 2023, which cannot be in Open AI's
 
 Thus, suppose we start with a pre-2023 poem, for the sake of having a more familiar example:
 
-Two roads diverged in a yellow wood,
-And sorry I could not travel both
+Two roads diverged in a yellow wood,  
+And sorry I could not travel both  
 
 The correct extension of the poem is:
 
-Two roads diverged in a yellow wood,
-And sorry I could not travel both
-And be one traveler, long I stood
-And looked down one as far as I could
-To where it bent in the undergrowth;
+Two roads diverged in a yellow wood,  
+And sorry I could not travel both  
+And be one traveler, long I stood  
+And looked down one as far as I could  
+To where it bent in the undergrowth;  
 
 GPT provides the following creative extension:
 
-Two roads diverged in a yellow wood,
-And sorry I could not travel both
-Yet each beckoned with a promise to explore,
-One bathed in sunlight, the other veiled in shadow's oath.
-In contemplation, I stood at the crossroads' core.
+Two roads diverged in a yellow wood,  
+And sorry I could not travel both  
+Yet each beckoned with a promise to explore,  
+One bathed in sunlight, the other veiled in shadow's oath.  
+In contemplation, I stood at the crossroads' core.  
 
 Now the two versions of the poem - Frost's and GPT's - would become training data for a fine tuning job.  The fine tuning would start from the model gpt-3.5-turbo and would modify it so as to be especially proficient at distinguishing the two verisons.  The new model, when asked which poem (Frost's or GPT's) is written by a real poet, would be likely to get the right answer.  By feeding many test cases into the fine tuning job, we make it more likely that the fine-tuned model can guess a wide variety of poems.
 
